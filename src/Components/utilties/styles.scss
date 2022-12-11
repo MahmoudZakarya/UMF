@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Unica One";
+  src: local("Unica One"),
+    url(../../fonts/UnicaOne-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.u-card {
+  width: 17em;
+  transition: ease all 0.3s;
+  background-color: rgb(0, 0, 0);
+  height: 25em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-wrapper {
+  display: block;
+  overflow: hidden;
+  margin: 0em 0em 0.6em;
+  padding-top: 17em;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 0 0.5em rgba(25, 25, 25, 0.1);
+  transition: ease all 0.7s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.u-wrapper img {
+  background-size: auto;
+}
+
+.color_bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12.5em;
+}
+
+.u-card-img {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 70%;
+  width: 45%;
+  left: 27.5%;
+  height: 25%;
+  color: #fff;
+  transition: ease all 0.3s;
+}
+.u-card-info {
+  display: block;
+  position: relative;
+  padding: 1.2em 0.6em;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  bottom: 6em;
+
+  h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.6em;
+    font-family: Unica One;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+    font-family: Unica One;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    font-size: 10px;
+  }
+
+  .u-card {
+    width: 17em;
+  }
+}
