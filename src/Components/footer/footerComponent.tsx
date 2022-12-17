@@ -7,7 +7,7 @@ export  const  Footer = () => {
         <p className='footerDesc'>Copyright © 2022 UMF - All Rights Reserved.
       </p>
      <div className="social-icons">
-        <a className="icon" href="https://twitter.com/UMF_NF" target='_blank'>
+        <a className="icon" href="https://twitter.com/UMF_NFT" target='_blank'>
           <i className="fa-brands fa-twitter"></i>
         </a>
         <a className="icon" href="https://discord.gg/5tDgtbYSn9" target='_blank'>

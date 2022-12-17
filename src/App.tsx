@@ -1041,7 +1041,7 @@ useEffect(
     <FAQ title=' What can I do with UMF..?' content="Check our
         <a href='#utilities'>utilities</a> above."/>
         <FAQ title=' What licences are available for my fighter after minting..?'
-         content="All the meta fighters are under under a non-exclusive licence."/>
+         content="All the meta fighters are under a non-exclusive licence."/>
     <FAQ title=' When will the UMF start presale
         minting..?' content="To be announced on our <a href='https://discord.gg/5tDgtbYSn9' target='_blank'>discord</a>
         server."/>

@@ -64,7 +64,7 @@ $backgroundColor: rgba(8, 0, 0, 1); */
   background-repeat: no-repeat;
   z-index: 999999;
   background-position: 50%;
-  background-size: cover;
+  background-size: contain;
 }
 
 body {
@@ -667,12 +667,12 @@ a {
   gap: 2em;
 }
 
-// media 1000px start
+// media 1280px start
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
   .overlay {
     background-image: url(./assets/overlay-mobile.png);
-    background-size: cover;
+    background-size: contain;
   }
   body {
     font-size: 8px;
@@ -770,6 +770,10 @@ a {
   .card {
     margin: 1em 0em;
     height: 40em;
+  }
+
+   .family-card #member-social a {
+    bottom: 0em !important; 
   }
 }
 
@@ -890,12 +894,7 @@ a {
     align-items: center;
   }
 
-  /* .family-wrapper{
-  display: flex;
-  
-  flex-wrap: wrap;
-  flex-direction: column;
-} */
+
   .paragraph-container {
     width: 60%;
   }
@@ -1015,12 +1014,6 @@ a {
     align-items: center;
   }
 
-  /* .family-wrapper{
-  display: flex;
-  
-  flex-wrap: wrap;
-  flex-direction: column;
-} */
   .paragraph-container {
     width: 60%;
   }
@@ -1057,9 +1050,7 @@ a {
     flex-direction: column;
   }
 
-  .family-card {
-    width: 5em;
-  }
+
   .member-p {
     padding: 0em;
   }
