@@ -4,20 +4,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 import FAQ from './Components/faq_Component/faq_Component';
 import TeamCard from './Components/member-card/member-card';
-import Gallery from './Components/gallery/Gallery';
 import Header from './Components/header/Header';
 import {Footer} from './Components/footer/footerComponent';
 
 import { UtiliteCard } from './Components/utilties/utilite-card';
 import { Snippets } from './Components/gallery/slider';
-import {GiChampions} from 'react-icons/gi'
 
 
 function App() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-//  const [hamburgerisActive, setHamburgerisActive] = useState(false);
 
 useEffect(
   ()=> {
@@ -40,7 +37,6 @@ useEffect(
         trigger: '.paragraph',
         start: '50% center',
         scrub: true,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.5,
       color: '#ff1111',
@@ -48,7 +44,6 @@ useEffect(
     });
       gsap.fromTo('#story', {
         opacity: 0,
-        // duration: 0.5,
         y: -150,
         ease: Expo.easeInOut,
       }, { 
@@ -87,8 +82,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 13,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       opacity:1,
       duration: 0.5,
@@ -106,8 +99,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 14,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.4,
       opacity:1,
@@ -128,7 +119,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 15,
         invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.4,
@@ -150,8 +140,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 15,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
        duration: 0.4,
        opacity:1,
@@ -170,8 +158,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 15,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.5,
       opacity:1,
@@ -189,8 +175,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 15,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.4,
       opacity:1,
@@ -208,8 +192,6 @@ useEffect(
         start: 'top 90%',
         end: 'top 60%',
         scrub: true,
-        // refreshPriority: 15,
-        // invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
       duration: 0.4,
       opacity:1,
@@ -457,7 +439,6 @@ useEffect(
         start: 'top 80%',
         end: 'top 30%',
         scrub: true,
-        // refreshPriority: 15,
         invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
      
@@ -481,7 +462,6 @@ useEffect(
         start: 'top 80%',
         end: 'top 30%',
         scrub: true,
-        // refreshPriority: 15,
         invalidateOnRefresh: true,
       } as ScrollTrigger.Vars,
      
@@ -663,11 +643,6 @@ useEffect(
   }
 
 
-  // const menuClick = ()=>{
-  // setHamburgerisActive(!hamburgerisActive);
- 
-  //  }
-
 
 
   return (
@@ -676,7 +651,7 @@ useEffect(
   <div className="overlay"></div>
    <Header/>
  
-  <section className="first-section">
+  <section className="first-section" id='home'>
 
       <div className="img-container"><img src={require("./assets/main-gif.gif")} alt="UMF" className="frist-section-img"/>
       </div>
@@ -697,15 +672,15 @@ useEffect(
             </p><br />
 
       </div>
-      <a href="https://discord.gg/5tDgtbYSn9" target="_blank" className="btn btn--start">Join Our Discord</a>
+      <a href="https://discord.gg/5tDgtbYSn9" target="_blank" className="btn btn--start" rel="noreferrer">Join Our Discord</a>
       <div className="social-icons">
-        <a className="icon" href="https://twitter.com/UMF_NFT"  target="_blank">
+        <a className="icon" href="https://twitter.com/UMF_NFT"  target="_blank" rel="noreferrer">
           <i className="fa-brands fa-twitter"></i>
         </a>
-        <a className="icon" href="https://discord.gg/5tDgtbYSn9" target="_blank">
+        <a className="icon" href="https://discord.gg/5tDgtbYSn9" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-discord"></i>
         </a>
-        <a className="icon" href="https://www.instagram.com/umf_nft/" target="_blank">
+        <a className="icon" href="https://www.instagram.com/umf_nft/" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-instagram"></i>
         </a>
       </div>
@@ -719,7 +694,7 @@ useEffect(
       <h3 className="title">Sneak Peaks</h3>
     </div>
      <Snippets/>
-    {/* <Gallery/> */}
+   
   </section>
 
 

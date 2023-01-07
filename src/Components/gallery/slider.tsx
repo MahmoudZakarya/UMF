@@ -1,7 +1,7 @@
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import React, {  MouseEventHandler, useEffect, useRef, useState } from 'react'
+import React, {  MouseEventHandler, useEffect, useState } from 'react'
 import { FaArrowRight,FaArrowLeft } from 'react-icons/fa';
 import "./styles.css";
 
@@ -77,8 +77,6 @@ export const Snippets = () => {
         autoplay:true,
         focusOnSelect:true,
         slidesToScroll:1,
-        // nextArrow: <NextArrow />, 
-        // prevArrow: <PervArrow />,
         beforeChange: (current:number, next:number)=> setImageIndex(next)
        
     };

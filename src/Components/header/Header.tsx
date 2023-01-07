@@ -13,14 +13,12 @@ const Header = () => {
   return (
     <>
     <header className="header">
-    <a href='' className="menu_item" id='logo'>
-      {/* <h3>UMF</h3>*/}
+    <a href='javascript:window.location.reload(true)' className="menu_item" id='logo'>
       <img className='logo-img' src={require('../../assets/logo.png')} alt="logo" />
-      {/* <div className='logo-img'></div> */}
       </a>
 
     <nav className="navigation" id={hamburgerisActive ? `navActive` : ` `}>
-      <a href="#" className="menu_item" onClick={menuClick} >Home</a>
+      <a href="#home" className="menu_item" onClick={menuClick} >Home</a>
       <a href="#SneakPeak" className="menu_item" onClick={menuClick}>Sneak Peak</a>
       <a href="#utilities" className="menu_item" onClick={menuClick}>UTILITIES</a>
       <a href="#story" className="menu_item" onClick={menuClick}>STORY</a>

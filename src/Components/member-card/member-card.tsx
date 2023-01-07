@@ -12,10 +12,10 @@ export default function TeamCard({id,img_path, mName,
         <h4 className="member-description">{mDescription}</h4>
         <p className="member-p">{mP}</p>
            <div className="social-icons" id="member-social">
-        <a className="icon" href={twitter} target='_blank'>
+        <a className="icon" href={twitter} target='_blank' rel="noreferrer">
           <i className="fa-brands fa-twitter"></i>
         </a>
-        <a className="icon" href={insta} target='_blank'>
+        <a className="icon" href={insta} target='_blank' rel="noreferrer">
           <i className="fa-brands fa-instagram"></i>
         </a>
        

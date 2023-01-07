@@ -46,10 +46,6 @@
   padding: 0;
 }
 
-/* $mainColor: rgba(138, 0, 3, 1);
-$secndaryColor: rgba(10, 8, 8, 1);
-$backgroundColor: rgba(8, 0, 0, 1); */
-
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -69,9 +65,6 @@ $backgroundColor: rgba(8, 0, 0, 1); */
 
 body {
   font-size: 16px;
-  /* background: #00000073; */
-  // background-image: url(../assets/background.jpg);
-  // font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffffff;
   min-block-size: 100%;
   background-color: #000000;
@@ -285,7 +278,6 @@ a {
 .social-icons a:hover {
   transform: scale(1.1);
   background-color: #57565650;
-  // animation: animate 2s linear infinite;
 }
 
 .story-section {
@@ -941,9 +933,6 @@ a {
   .member-p {
     padding: 0em;
     font-family: Unica One;
-  }
-
-  .secTeam-container .secTeam-box span::before {
   }
 }
 
